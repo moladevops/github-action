@@ -32,6 +32,7 @@ jobs:
         run: cat README.md
 
   build_job:
+    needs: setup_job
     runs-on: windows-latest
 
     steps:
